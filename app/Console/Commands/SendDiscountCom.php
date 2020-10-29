@@ -53,7 +53,7 @@ class SendDiscountCom extends Command
         $title = '';
         $content = '';
         switch ($time) {
-            case $time > date('Y-m-d 23:58:30') && $time <= date('Y-m-d 23:59:30'):
+            case $time > date('Y-m-d 23:55:30') && $time <= date('Y-m-d 23:59:30'):
                 $title = '1.中信正道4张；2.工行积分兑；3.广发-苏州-饭票-买菜';
                 $content = '0点，中信信用卡，动卡空间APP，精彩365，定位郑州，天天友券
 1.正道44抵50券，1户4张。每单返45
@@ -69,14 +69,14 @@ class SendDiscountCom extends Command
 截图➕复制券码
 上传链接https://www.bettercard.cn/wesell/?channel=normal&redirect=/jfsl/pages/trade/detail?id=1555';
                 break;
-            case $time > date('Y-m-d 10:58:30') && $time <= date('Y-m-d 10:59:30'):
+            case $time > date('Y-m-d 10:55:30') && $time <= date('Y-m-d 10:59:30'):
                 $title = '1.广发-饭票-呷哺35买；';
                 $content = '广发发现精彩app，定位苏州，饭票，搜买菜，积分兑换 
  24收叮咚买菜30元礼品卡
 截图➕复制券码
 上传链接https://www.bettercard.cn/wesell/?channel=normal&redirect=/jfsl/pages/trade/detail?id=1555';
                 break;
-            case $time > date('Y-m-01 8:58:30') && $time <= date('Y-m-01 8:59:30'):
+            case $time > date('Y-m-01 8:55:30') && $time <= date('Y-m-01 8:59:30'):
                 $title = '1.交通-支付宝-丰水果';
                 $content = '交行口碑4.5元毛，每月一次。9点开始
 支付宝里口碑定位合肥，搜鲜丰水果 ，或者直接扫码直达 
