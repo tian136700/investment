@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Mail;
  */
 class CommonHelper
 {
-    public $eamilArr = [
+    public static $eamilArr = [
         '493701289@qq.com'
     ];
 

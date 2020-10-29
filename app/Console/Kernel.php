@@ -2,6 +2,7 @@
 
 namespace App\Console;
 
+use App\Console\Commands\SendDiscountCom;
 use App\Console\Commands\SendEmailCom;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
@@ -14,7 +15,8 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        SendEmailCom::class
+        SendEmailCom::class,
+        SendDiscountCom::class,
     ];
 
     /**
@@ -31,6 +33,8 @@ class Kernel extends ConsoleKernel
         $schedule->command('SendEmailCom')
             ->everyThirtyMinutes()
             ->between('13:00', '14:20');//可转债申购提醒
+        $schedule->command('SendDiscountCom')
+            ->everyMinute();//信用卡优惠提醒
     }
 
     /**
