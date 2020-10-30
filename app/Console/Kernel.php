@@ -28,11 +28,11 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         $schedule->command('SendEmailCom')
-            ->everyTenMinutes()
-            ->between('10:00', '10:30');//可转债申购提醒
+            ->between('10:00', '10:30')
+            ->everyTenMinutes();
         $schedule->command('SendEmailCom')
-            ->everyTenMinutes()
-            ->between('13:00', '13:30');//可转债申购提醒
+            ->between('13:00', '13:30')
+            ->everyTenMinutes();//可转债申购提醒
         $schedule->command('SendDiscountCom')
             ->everyMinute();//信用卡优惠提醒
     }
