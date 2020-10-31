@@ -33,8 +33,8 @@ class Kernel extends ConsoleKernel
         $schedule->command('SendEmailCom')
             ->between('13:00', '13:30')
             ->everyTenMinutes();//可转债申购提醒
-        $schedule->command('SendDiscountCom')
-            ->everyMinute();//信用卡优惠提醒
+//        $schedule->command('SendDiscountCom')
+//            ->everyMinute();//信用卡优惠提醒
     }
 
     /**
